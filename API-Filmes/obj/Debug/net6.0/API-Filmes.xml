@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>API-Filmes</name>
+    </assembly>
+    <members>
+        <member name="M:API_Filmes.Controllers.FilmeController.Get(API_Filmes.Models.Filtro)">
+            <summary>
+            Retorna os Filmes do Banco - Permite Filtro.
+            </summary>
+            <response code="200">Retorna os Filmes cadastrados no Banco de Dados</response>
+            <response code="400">Retorna descrição de erro ocorrido na Requisição</response>
+            <response code="404">Filme não foi encontrado</response>
+        </member>
+        <member name="M:API_Filmes.Controllers.FilmeController.Get(System.Int32)">
+            <summary>
+            Retorna Filme do Banco de Dados por Id.
+            </summary>
+            <response code="200">Retorna Filme com Id Correspondente </response>
+            <response code="404">Filme com Id pesquisado não foi encontrado</response>
+        </member>
+        <member name="M:API_Filmes.Controllers.FilmeController.Put(System.Int32,API_Filmes.Models.Filme)">
+            <summary>
+            Permite atualizar informações de um filme no Banco de Dados.
+            </summary>
+            <response code="204">Filme foi Atualizado no Banco de Dados</response>
+            <response code="400">Retorna descrição de erro ocorrido na Requisição</response>
+            <response code="404">Filme não foi encontrado para ser atualizado</response>
+        </member>
+        <member name="M:API_Filmes.Controllers.FilmeController.Delete(System.Int32)">
+            <summary>
+            Apaga um Filme do Banco de Dados.
+            </summary>
+            <response code="204">Filme foi apagado com Sucesso do Banco de Dados</response>
+            <response code="404">Filme não foi encontrado </response>
+        </member>
+        <member name="M:API_Filmes.Controllers.FilmeController.Post(API_Filmes.Models.Filme)">
+            <summary>
+            Insere um Filme no Banco de Dados.
+            </summary>
+            <response code="201">Retorna Filme que foi Inserido no Banco de Dados</response>
+            <response code="400">Retorna descrição de erro ocorrido na Requisição</response>
+        </member>
+    </members>
+</doc>
